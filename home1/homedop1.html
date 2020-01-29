@@ -1,14 +1,21 @@
 <!DOCTYPE html> 
- <HTML> 
+ <HTML lang=en> 
 	 <HEAD>
 		 <META charset="utf-8">
          <TITLE>Дополнительное</TITLE>
          <style>
             p {
-             margin-top: 1em; /* Отступ сверху */
+              margin-top: 1em; /* Отступ сверху */
              margin-bottom: 1,2em; /* Отступ снизу */
             }
-           </style>
+            .colortext {
+              color: red; /* Красный цвет выделения */
+                       }
+            .style {
+            font-family: monospace  ; font-size:13px;
+                    }
+            .fat { font-size:18px;}
+            </style>
 	 </HEAD> 
 		 <BODY> 
              <H1 align="center">Заголовок первого уровня</H1>
@@ -27,7 +34,8 @@
         <hr>
     <h3> Семантические и функциональные строчные теги</h3>
         <p>Пожелания автора:</p>
-		<p> <del> <bgcolor="#ff0000">Данный текст убрать из монографии</del></del> и заменить его на <a href="http://docs.python.org/modindex.html">вновь помещённый текст</a>.
+        <pre>  <span class="colortext"><del>Данный текст убрать из монографии</del></span> и заменить его на
+        <a href="http://docs.python.org/modindex.html">вновь помещённый текст</a>.
         <hr>
         <h3>Работа со строчными и блоковыми цитатами</h3>
         <p> Цитата короткая:<br>
@@ -42,10 +50,55 @@
        </pre></p> 
         <hr>
         <h3>Семантические и функциональные строчные теги</h3>
-        <p><strong> Тэг <STRONG> делает данный фрагмент текста более важным.</STRONG>
-            <em>    Тэг <em> менее важным.</em>
-            
-			
-				</BODY>  
-  <!-- ПОКА УСПЕЛ ТЭТО -->
-  </HTML> ​
+        <p><strong> Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным.</STRONG>
+        Тэг &lt;em&gt; <em>менее важным.</em>
+         В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <b>полужирным</b>
+         и <i>курсивом</i> 
+        соответственно.  </p>
+      <hr>
+      <h3>Теги форматирования машинного языка</h3>
+      <p>При выполнении программного кода на языке PERL:</p>
+      <p><code>
+        #!/usr/local/bin/perl<br>
+        print "Content‐type: text/html\n\n";<br>
+        print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";<br>
+      </code></p> 
+      <p> Программа выведет:</p> 
+      <p><span class="style">Hello, Word!</span></p>
+      <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+      <h1>Hello, World!</h1>
+      <hr>
+      <h3>Комментарии и литералы(мнемоники) в HTML</h3>
+  <pre>&lt;!‐‐ это комментарий ‐‐&gt;
+                        &lt;!&ndash;&ndash; и это также комментарий,
+                        занимающий более одной строки &ndash;&ndash;&gt;
+  </pre>  
+     <hr>                
+     <h3>Теги над-­ и подстрочных символов</h3>
+     <h4 align="center"> Магазин работает: </h4>
+    <strong><pre>
+                                                                               с 08<sup><u>30</u></sup>до 18<sup><u>30</u></sup>
+                                                                            обед с 13<sup><u>30</u></sup> до 14<sup><u>00</u></sup>                                                         
+                                                                       выходной: <u>суббота</u>, <u>воскресенье</u>
+
+    </pre></strong>
+    <hr>
+    <h3>Вот такой текст</h3>
+    <pre>
+      <b>
+       <span class="fat">
+      Э о р с о е ё ы т к т 
+       т п о т в с л й е с 
+      </span>
+      </b>
+    </pre>
+     <hr>
+     <h3>Акроним и курсив</h3>
+    <p> ТФ: Y(<small><i>х</i></small>)=e<sup><small><i>-i&pi;x</i></small></sup>+log<sub><small>x</small></sub>4
+    </p>
+    <hr>
+    <h3>Тег small внутри абзаца</h3> 
+    <p aling="right"> Создано при помощи VSC&copy; </p> <!-- тут что то пошло не так SOS SOS SOS -->
+</BODY>  
+ 
+</HTML> ​
