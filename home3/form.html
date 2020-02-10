@@ -16,10 +16,9 @@
    
 
 </HEAD>
-<BODY> <!-- Еще не доделал, думаю к среде-->
+<BODY> 
   <TABLE>
-     
-    <tr>
+      <tr>
     <td><p><strong>Простая форма поиска с вариантами: </strong></p>
         <form action="http://fe.it-academy.by/TestForm.php">
      <fieldset>
@@ -30,7 +29,8 @@
         <input type="radio"  name="Search" value="в google">в google
                 <p><i>Длинна запроса не более 10 символов</i></p>
     </fieldset>
-    </form></td>
+       </form>
+    </td>
        
     <td><p><strong>Простая форма поиска с вариантами:</strong></p>
         <form action="http://fe.it-academy.by/TestForm.php">
@@ -65,41 +65,30 @@
               <br>
             <input type="submit"; value="Войти">
         <p><i>*-обязательное поле</i></p>
-    </fieldset>
-    </form></td>
+        </fieldset>
+        </form></td>
     
     
     <td><p><strong>Опрос(голосование):</strong></p>
         <form action="http://fe.it-academy.by/TestForm.php">
     <fieldset>
     <legend>Как вам?</legend>
-        <label>
             <input type="radio" name="How you like?[]" value="bad">ничего<br>
-        </label>
-        <label>
             <input type="radio" name="How you like?[]" value="notbad">неплохо<br>
-        </label>
-        <label>
             <input type="radio" name="How you like?[]" value="good">хорошо<br>
-        </label>
-        <label>
             <input type="radio" name="How you like?[]" value="super">супер<br>
-        </label>
-        <label>
             <input type="hidden" name="date_voite" value="2013.12.31"><br>
-        </label>
-        <input type="submit"; value="Отправить">
+            <input type="submit"; value="Отправить">
         </fieldset>
        </form></td>
     </tr>
 
     <tr>
       <td><p><strong>Отзыв:</strong></p>
-          <form action="http://fe.it-academy.by/TestForm.php">
-       <fieldset>
-       <legend>Оставте Ваш отзыв</legend>
-        
-        <input type="text" name="name">* Имя<br>
+        <form action="http://fe.it-academy.by/TestForm.php"    method="POST">
+        <fieldset>
+        <legend>Оставте Ваш отзыв</legend>
+        <input type="text" name="name" required>* Имя<br>
         <input type="email" name="email" required>*e-mail<br>
         <input type="submit"; value=" Отправить">
          </fieldset>
@@ -109,24 +98,38 @@
             <form action="http://fe.it-academy.by/TestForm.php">
          <fieldset>
             <legend>Города РБ</legend>
-        
-        <input type="text" name="имя">
-        <input type="text" name="лет">
-        <input type="submit"; value=" Искать">
-        <p><i>Автофокус в поле поиска</i></p>
+                <select name="city">
+                   <optgroup label="Города РБ">
+                <option value="0" selected>Брест</option>
+                <option value="1">Молодечно</option>
+                <option value="2">Минск</option>
+                <option value="3">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города РФ">
+                <option value="4" disabled>Горьки</option>
+                <option value="5">Питер</option>
+                <option value="6">Москва</option>
+                
+                     </optgroup>
+                </select>
+                <input type="submit"; value="OK">
+            <button type='submit'>
+                <b>Submit</b><br>
+                <img src='../home2/img/home.png'>
+
+                </button>
         </fieldset>
         </form></td> 
     </tr>
 
     <tr>
        <td><p><strong>Загрузка файла на сервер:</strong></p>
-           <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
+           <form action="http://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>Upload</legend>
-            <input type="file" name="file" required placeholder="выберете file">
-            <p> Срок хранения (года):</p><br>
-            <input type="submit"; value="Загрузить">
-            <p><i>Автофокус в поле поиска</i></p>
+            <input type="file" name="file" required placeholder="загрузите file">
+            <p> Срок хранения (года):</p>
+            <pre>                  <input type="submit"; value="Загрузить"></pre>
         </fieldset>
         </form></td>
     
@@ -134,11 +137,10 @@
         <form action="http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend>Строка поиска</legend>
-            <input type="file" name="file" >
+            <input type="phon" name="" >
             <input type="text" name="лет">
             <input type="submit"; value=" Искать">
-            <p><i>Автофокус в поле поиска</i></p>
-       </fieldset>
+            </fieldset>
          </form></td>
     </tr>
 </TABLE>            
