@@ -1,15 +1,25 @@
 header{
-            
+    font-size: 14px;       
     text-align: right;
 }
-.a {
-    font-style: italic;
-    color: brown;
-}
+
+article {
+    font-family: 'Caveat';
+    font-style: seri;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+     }
 footer{
     font-weight:600;
-}
-article{
-    font-family: comic;
-    
-}
+   
+      }
+h1{
+    font-size: 16px;
+    text-align: right;
+    font-weight: 600;
+    }
+h3{
+    font-size: 14;
+    text-decoration: underline;
+    font-family: 'Caveat';
+   }
