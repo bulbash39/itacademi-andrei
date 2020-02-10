@@ -4,10 +4,11 @@ header{
 }
 
 article {
-    font-family: 'Caveat';
+    font-family: 'Caveat', cursive;
     font-style: seri;
     color: rgb(0, 0, 0);
     font-size: 18px;
+    text-align: justify;
      }
 footer{
     font-weight:600;
@@ -21,5 +22,5 @@ h1{
 h3{
     font-size: 14;
     text-decoration: underline;
-    font-family: 'Caveat';
+    font-family: 'Caveat', cursive;
    }
