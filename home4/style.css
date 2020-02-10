@@ -1,0 +1,15 @@
+header{
+            
+    text-align: right;
+}
+.a {
+    font-style: italic;
+    color: brown;
+}
+footer{
+    font-weight:600;
+}
+article{
+    font-family: comic;
+    
+}
